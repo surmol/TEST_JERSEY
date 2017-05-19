@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<!--
+        <property name="hibernate.connection.url">jdbc:postgresql://192.168.30.74:5432/unity</property>
+		-->
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost/unity</property>
+     <property name="hibernate.connection.username">admin</property> 
+     <property name="hibernate.connection.password">123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        
+         <!-- List of XML mapping files -->
+   		 <mapping class="rinicom.unity.server.database.entities.users"/>
+   		 <mapping class="rinicom.unity.server.database.entities.Thread"/>
+		 <mapping class="rinicom.unity.server.database.entities.Post"/>
+		 <mapping class="rinicom.unity.server.database.entities.PostExtended"/>
+		 <mapping class="rinicom.unity.server.database.entities.Local_Area"/>	
+		 <mapping class="rinicom.unity.server.database.entities.Thread_Extended"/>
+		 <mapping class="rinicom.unity.server.database.entities.User_Extended"/>
+		 <mapping class="rinicom.unity.server.database.entities.KeyContact"/>
+         <mapping class="rinicom.unity.server.database.entities.News"/>
+         <mapping class="rinicom.unity.server.database.entities.Event"/>
+		 <mapping class="rinicom.unity.server.database.entities.Topic"/>
+		 <mapping class="rinicom.unity.server.database.entities.Topic_Extended"/>
+		 <mapping class="rinicom.unity.server.database.entities.Topic_permissions"/>
+		 
+		 <mapping class="rinicom.unity.server.database.entities.Tag"/>
+		 <mapping class="rinicom.unity.server.database.entities.Tag_thread"/>
+		 <mapping class="rinicom.unity.server.database.entities.KeyContactType"/>
+		 <mapping class="rinicom.unity.server.database.entities.NewsType"/>
+		 <mapping class="rinicom.unity.server.database.entities.EventType"/>
+		 <mapping class="rinicom.unity.server.database.entities.Vote_thread"/>
+		 <mapping class="rinicom.unity.server.database.entities.Report_thread"/>
+		 <mapping class="rinicom.unity.server.database.entities.Feeds"/>
+		 <mapping class="rinicom.unity.server.database.entities.PrivateStatus"/>
+		 
+		 <mapping class="rinicom.unity.server.database.entities.Feedback"/>
+		 <mapping class="rinicom.unity.server.database.entities.CPSG.Focus"/>
+		 <mapping class="rinicom.unity.server.database.entities.CPSG.Activity"/>
+		 <mapping class="rinicom.unity.server.database.entities.CPSG.TOM_user"/>
+		 <mapping class="rinicom.unity.server.database.entities.CPSG.Heading_1"/>
+		 <mapping class="rinicom.unity.server.database.entities.CPSG.Heading_2"/>
+		 <mapping class="rinicom.unity.server.database.entities.CPSG.Heading_3"/>
+		 <mapping class="rinicom.unity.server.database.entities.CPSG.COM_area"/>
+ 		 <mapping class="rinicom.unity.server.database.entities.CPSG.TOM_feedback"/>		 
+ 		 <mapping class="rinicom.unity.server.database.entities.CPSG.COM_feedback"/>		 
+		 		 
+		 <mapping class="rinicom.unity.server.database.entities.fileUpload.Image"/>
+        <mapping class="rinicom.unity.server.database.entities.fileUpload.Document"/>
+		 <mapping class="rinicom.unity.server.database.entities.Roles"/>
+         <mapping class="rinicom.unity.server.database.entities.Token"/>
+		 <mapping class="rinicom.unity.server.database.entities.messaging.Message"/>
+		 <mapping class="rinicom.unity.server.database.entities.messaging.Conversation"/>
+		 <mapping class="rinicom.unity.server.database.entities.Subscribe_Thread"/>
+		 <mapping class="rinicom.unity.server.database.entities.Subscribe_News"/>
+		 <mapping class="rinicom.unity.server.database.entities.Subscribe_Events"/>
+		 <mapping class="rinicom.unity.server.database.entities.Thread_Update"/>
+		 
+
+		 
+		 <mapping class="rinicom.unity.server.database.entities.Event_Notification"/>
+		 <mapping class="rinicom.unity.server.database.entities.News_Notification"/>
+		 <mapping class="rinicom.unity.server.database.entities.Post_Notification"/>
+		 <mapping class="rinicom.unity.server.database.entities.Post_Notification_Extended"/>
+		 <mapping class="rinicom.unity.server.database.entities.Event_Notification_Extended"/>
+		 <mapping class="rinicom.unity.server.database.entities.News_Notification_Extended"/>
+		 <mapping class="rinicom.unity.server.database.entities.Conversation_Notification_Extended"/>
+		 <mapping class="rinicom.unity.server.database.entities.ThreadImage"/>
+        <mapping class="rinicom.unity.server.database.entities.ThreadDocument"/>
+		 <mapping class="rinicom.unity.server.database.entities.fileUpload.PostImage"/>
+        <mapping class="rinicom.unity.server.database.entities.fileUpload.PostDocument"/>
+        <mapping class="rinicom.unity.server.database.entities.fileUpload.NewsDocument"/>
+        <mapping class="rinicom.unity.server.database.entities.fileUpload.EventDocument"/>
+		 <mapping class="rinicom.unity.server.database.entities.firebase.FirebaseToken" />
+		 <mapping class="rinicom.unity.server.database.entities.Meetings"/>
+		 <mapping class="rinicom.unity.server.database.entities.Meetings_Dates"/>
+		 <mapping class="rinicom.unity.server.database.entities.Meetings_Participants_Votes"/>		 
+		 <mapping class="rinicom.unity.server.database.entities.Meetings_Notification2"/>
+		 <mapping class="rinicom.unity.server.database.entities.Meetings_Discussions"/>
+		 <mapping class="rinicom.unity.server.database.entities.Users_Photo"/>
+		 
+	</session-factory>
+</hibernate-configuration>

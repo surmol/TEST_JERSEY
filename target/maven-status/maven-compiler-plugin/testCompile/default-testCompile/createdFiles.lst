@@ -1,0 +1,15 @@
+rinicom\unity\server\client\ImageClientTest.class
+rinicom\unity\server\database\messaging\MessageFacadeTest.class
+rinicom\unity\server\tests\HibernateTest.class
+rinicom\unity\server\client\AuthenticationClientTest.class
+rinicom\unity\server\client\messaging\ConversationClientTest.class
+rinicom\unity\server\client\EventClientTest.class
+rinicom\unity\server\database\encryption\EncryptionUtilsTest.class
+rinicom\unity\server\database\encryption\PBKDF2HashTest.class
+rinicom\unity\server\tests\TestMig.class
+rinicom\unity\server\client\NewsClientTest.class
+rinicom\unity\server\client\KeyContactClientTest.class
+rinicom\unity\server\database\encryption\Sha256HashTest.class
+rinicom\unity\server\services\mail\EmailServiceTest.class
+rinicom\unity\server\database\messaging\ConversationFacadeTest.class
+rinicom\unity\server\client\messaging\MessageClientTest.class
